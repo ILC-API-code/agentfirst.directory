@@ -2,9 +2,11 @@
 slug: "402registry"
 name: "402registry"
 description: "Probes a website the way AI crawlers fetch it, sending GPTBot, ClaudeBot and other crawler user-agents, and keeps a registry of dated verdicts."
-agentSummary: "402registry lets an agent look up, for free, the last dated verdict on whether a site answers the plain-HTTP fetch AI crawlers make (GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot), using REST or a remote MCP server. The verdict comes from 402registry's own probes, which send those crawlers' user-agent strings; it is not a record of the crawlers' real visits. An agent can also pay over x402 in USDC on Base to run a fresh check now, or to download an enriched catalog snapshot as one JSON file."
+agentSummary: "Site-audit agents can retrieve cached verdicts through REST or MCP, then pay over x402 in USDC on Base for a fresh check or enriched registry snapshot. The service uses its own plain-HTTP probes with four AI crawler user-agent strings, making it useful for diagnosing content delivery and firewall differences, not observing real crawler visits or predicting rankings."
 seoTitle: "402registry: Check How a Website Answers AI Crawler Requests"
 seoDescription: "See how 402registry lets agents look up dated verdicts from its AI crawler user-agent probes for free, and pay over x402 for a fresh check or a catalog snapshot."
+reviewedBy: "foo-bender"
+reviewedAt: "2026-10-12"
 category: "marketing-seo"
 tags: ["x402", "mcp", "ai-crawlers", "seo"]
 websiteUrl: "https://402registry.com"

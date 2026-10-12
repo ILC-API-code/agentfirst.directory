@@ -2,9 +2,11 @@
 slug: "aiskills402"
 name: "AISkills402"
 description: "Searchable catalog of tested agent skill files: agents search it free over REST or MCP and buy a file once over x402."
-agentSummary: "AISkills402 lets an agent search a catalog of tested SKILL.md files for free through REST or a remote MCP server, then buy the file of a chosen skill over plain HTTP with x402 in USDC on Base, with no account or API key. Its A2A agent answers every message with the same guide and neither searches nor sells. The purchase includes free re-downloads and free new versions. Each skill card states where a weaker model fails."
+agentSummary: "Agent builders can discover SKILL.md files through free REST or MCP search and inspect versioned cards with prices, hashes and vendor-reported tests before buying. A one-time HTTP x402 payment in USDC on Base delivers the file and a token for free re-downloads and updates. Purchased files permit personal use and paid work, but not resale or republication."
 seoTitle: "AISkills402: Tested Agent Skill Files Bought Once Over x402"
 seoDescription: "See how AISkills402 lets agents search tested SKILL.md files free over REST or MCP and buy the file once with x402, with re-downloads and updates included."
+reviewedBy: "foo-bender"
+reviewedAt: "2026-10-12"
 category: "specialized-search-discovery-engines"
 tags: ["x402", "mcp", "agent-skills", "skill-catalog"]
 websiteUrl: "https://aiskills402.com"
