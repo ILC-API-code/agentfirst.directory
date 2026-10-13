@@ -1,7 +1,7 @@
 ---
 slug: "looot"
 name: "looot"
-description: "One API key and prepaid balance for about 2,500 data endpoints, exposed to agents over a remote MCP server, CLI and REST API"
+description: "A hosted catalog of data endpoints behind one token and prepaid balance, exposed to agents over a remote MCP server, CLI and REST API"
 category: "api-access-orchestration-layers"
 tags:
   - "mcp"
@@ -10,7 +10,6 @@ tags:
   - "search"
   - "prepaid"
 websiteUrl: "https://looot.ai"
-githubUrl: "https://github.com/loootai/looot-mcp"
 pricing: "paid"
 classification: "agent-enabling"
 entityType: "web-api"
@@ -26,7 +25,7 @@ deploymentModes:
 evidenceSources:
   - title: "looot documentation"
     url: "https://docs.looot.ai/"
-    claim: "The documentation describes one catalog of external data APIs behind one token and one prepaid balance, reachable from the web, the CLI, a remote MCP server and a REST API, with search, price inspection and run steps for agents."
+    claim: "The documentation describes a catalog of external data APIs behind one token and one prepaid balance, with no count claimed here, reachable from the web, the CLI, a remote MCP server and a REST API, with search, price inspection and run steps for agents."
     accessedAt: "2026-10-12"
     sourceType: "official-documentation"
   - title: "looot MCP quickstart"
@@ -36,12 +35,12 @@ evidenceSources:
     sourceType: "official-documentation"
   - title: "looot pricing basics"
     url: "https://docs.looot.ai/get-started/pricing-basics"
-    claim: "looot is prepaid, charged per call or per result, with $0 on failure and no subscription."
+    claim: "looot is prepaid, charged per call or per result, with no subscription. Provider failures cost $0. The minimum top-up is not fixed on this page; the live balance response reports it as topUpLink.minimumUsd."
     accessedAt: "2026-10-12"
     sourceType: "official-pricing"
   - title: "looot-mcp repository"
     url: "https://github.com/loootai/looot-mcp"
-    claim: "The public MIT-licensed repository holds the TypeScript MCP bridge, server.json and install steps for the hosted looot MCP server."
+    claim: "The public MIT-licensed repository holds the JavaScript stdio client bridge (it wraps a pinned mcp-remote), server.json and install steps for connecting to the hosted looot MCP server. The MIT licence covers this client component only. The hosted service has its own terms and the repository does not let anyone self-host it."
     accessedAt: "2026-10-12"
     sourceType: "official-repository"
 verificationLevel: "documentation-reviewed"
@@ -49,14 +48,14 @@ classificationRationaleMd: "The service is a hosted data API that agents call th
 inclusionRationaleMd: "Agents can search a catalog of data endpoints, read the price before a call, and run a job with provider fallback under one credential."
 bestForMd: "Agent builders who need work email, phone, company and people enrichment, Google SERP or web page data without managing a key per provider."
 notBestForMd: "Teams that need a free tier, a subscription plan, or a single provider's full native API."
-limitationsMd: "looot is prepaid with a $5 minimum top-up and no free tier. Provider coverage and per-call prices vary by endpoint; check the price on the catalog row before running."
+limitationsMd: "looot is prepaid with no free tier. The minimum top-up is shown by the live balance (topUpLink.minimumUsd). Catalog entries are marked runs_now, needs_your_account or coming_soon, so not every listed operation runs with only a looot token; some need a connected provider account and some cannot run yet. Job routing picks a provider that is runnable for the workspace. A quoted price is an estimate and hold; the actual charge is settled per result, with a documented ceiling of three times the hold. A completed miss can still be charged before fallback, which differs from a provider failure at $0. Prices vary by endpoint, so check the catalog row before running."
 unknownsMd: "No independent benchmark of data accuracy or provider fallback success rates was reviewed."
 ---
 
-looot is a hosted data API with a remote MCP server at https://api.looot.ai/mcp. One API key and one prepaid balance cover about 2,500 endpoints from 90+ providers, including work email, phone, company and people enrichment, Google SERP, web search and web page reading.
+looot is a hosted data API with a remote MCP server at https://api.looot.ai/mcp. One token and one prepaid balance cover a catalog of endpoints from many providers, including work email, phone, company and people enrichment, Google SERP, web search and web page reading. Availability depends on the endpoint and the workspace, see limitations.
 
 ## So agents can...
 
 - search the catalog in plain words and read an endpoint's price before running it
 - run a job and let looot pick a provider, with fallback to the next one on a miss
-- pay only for calls that completed, with a receipt for each attempt
+- pay per result, with a receipt for each attempt; provider failures cost $0
