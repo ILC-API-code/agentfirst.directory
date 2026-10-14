@@ -1,9 +1,9 @@
 ---
 slug: "aident-loadout"
 name: "Aident Loadout"
-description: "Capability layer that connects AI agents to 1,000+ apps and 400+ Skills through one setup"
+description: "Capability layer that connects AI agents to your apps and 400+ Skills through one setup"
 seoTitle: "Aident Loadout: One App and Skill Layer for AI Agents"
-seoDescription: "See how Aident Loadout lets Codex, Claude Code, Cursor, ChatGPT and other MCP clients use 1,000+ connected apps and 400+ Skills, with Vault and Audit."
+seoDescription: "See how Aident Loadout lets Codex, Claude Code, Cursor, ChatGPT and other MCP clients use the same connected apps and 400+ Skills, with Vault and Audit."
 agentSummary: "Aident Loadout gives existing agents one place to discover and run actions across connected apps. Agents search the app catalog by intent, read the live action schema, and execute through Loadout, while OAuth sign-in happens in the browser and stored credentials stay in Aident Vault. Each action is recorded in Audit with its status, source, and cost."
 category: "saas-tool-integration-platforms"
 tags:
@@ -29,7 +29,7 @@ deploymentModes:
 evidenceSources:
   - title: "Aident Loadout homepage — apps, Skills, Vault, Audit and supported agents"
     url: "https://aident.ai/"
-    claim: "The homepage describes 1,000+ Apps for AI agents and 400+ Skills, connecting apps once and reusing them across Codex, Claude Code, Hermes, ChatGPT and other MCP-compatible clients, with credentials kept in Aident Vault and every Action reviewable in Audit."
+    claim: "The homepage describes an app catalog for AI agents and 400+ Skills, connecting apps once and reusing them across Codex, Claude Code, Hermes, ChatGPT and other MCP-compatible clients, with credentials kept in Aident Vault and every Action reviewable in Audit."
     accessedAt: "2026-10-13"
     sourceType: "official-product-page"
   - title: "MCP setup for chat clients"
@@ -68,7 +68,7 @@ Aident Loadout is a capability layer for AI agents. You connect your apps once, 
 
 ## So agents can...
 
-- discover and run actions across 1,000+ connected apps from one MCP endpoint or CLI
+- discover and run actions across connected apps from one MCP endpoint or CLI
 - start from 400+ expert-built Skills for research, outreach, content and operations
 - reuse the same connected accounts across Codex, Claude Code, Cursor, ChatGPT and other MCP clients
 - act on a user's apps without receiving their raw credentials, with every action logged in Audit
