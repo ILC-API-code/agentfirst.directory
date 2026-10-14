@@ -35,9 +35,14 @@ evidenceSources:
     sourceType: "official-documentation"
   - title: "looot pricing basics"
     url: "https://docs.looot.ai/get-started/pricing-basics"
-    claim: "looot is prepaid, charged per call or per result, with no subscription. Provider failures cost $0. The minimum top-up is not fixed on this page; the live balance response reports it as topUpLink.minimumUsd."
+    claim: "looot is prepaid, charged per call or per result depending on the endpoint, with no subscription. The page states that failures cost $0; the gateway skill file adds one exception, listed as its own evidence item below. The minimum top-up is not fixed on this page; the live balance response reports it as topUpLink.minimumUsd."
     accessedAt: "2026-10-12"
     sourceType: "official-pricing"
+  - title: "looot gateway skill file"
+    url: "https://api.looot.ai/skill.md"
+    claim: "The gateway contract says a provider error or timeout settles at $0 unless the provider itself reports a cost for it, and the receipt shows which. This is separate from a completed miss, which can be charged."
+    accessedAt: "2026-10-14"
+    sourceType: "official-documentation"
   - title: "looot-mcp repository"
     url: "https://github.com/loootai/looot-mcp"
     claim: "The public MIT-licensed repository holds the JavaScript stdio client bridge (it wraps a pinned mcp-remote), server.json and install steps for connecting to the hosted looot MCP server. The MIT licence covers this client component only. The hosted service has its own terms and the repository does not let anyone self-host it."
@@ -48,7 +53,7 @@ classificationRationaleMd: "The service is a hosted data API that agents call th
 inclusionRationaleMd: "Agents can search a catalog of data endpoints, read the price before a call, and run a job with provider fallback under one credential."
 bestForMd: "Agent builders who need work email, phone, company and people enrichment, Google SERP or web page data without managing a key per provider."
 notBestForMd: "Teams that need a free tier, a subscription plan, or a single provider's full native API."
-limitationsMd: "looot is prepaid with no free tier. The minimum top-up is shown by the live balance (topUpLink.minimumUsd). Catalog entries are marked runs_now, needs_your_account or coming_soon, so not every listed operation runs with only a looot token; some need a connected provider account and some cannot run yet. Job routing picks a provider that is runnable for the workspace. A quoted price is an estimate and hold; the actual charge is settled per result, with a documented ceiling of three times the hold. A completed miss can still be charged before fallback, which differs from a provider failure at $0. Prices vary by endpoint, so check the catalog row before running."
+limitationsMd: "looot is prepaid with no free tier. The minimum top-up is shown by the live balance (topUpLink.minimumUsd). Catalog entries are marked runs_now, needs_your_account or coming_soon, so not every listed operation runs with only a looot token; some need a connected provider account and some cannot run yet. Job routing picks a provider that is runnable for the workspace. A quoted price is an estimate and hold; the actual charge is settled per call or per result according to the endpoint, with a documented ceiling of three times the hold. A completed miss can still be charged before fallback, including a flat per-call fee on per-call endpoints. A provider error or timeout settles at $0 unless the provider itself reports a cost for it; the receipt shows which. Prices vary by endpoint, so check the catalog row before running."
 unknownsMd: "No independent benchmark of data accuracy or provider fallback success rates was reviewed."
 ---
 
@@ -58,4 +63,4 @@ looot is a hosted data API with a remote MCP server at https://api.looot.ai/mcp.
 
 - search the catalog in plain words and read an endpoint's price before running it
 - run a job and let looot pick a provider, with fallback to the next one on a miss
-- pay per result, with a receipt for each attempt; provider failures cost $0
+- pay per call or per result depending on the endpoint, with a receipt for each attempt; a provider error or timeout settles at $0 unless the provider reports a cost for it
