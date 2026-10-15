@@ -2,6 +2,10 @@
 slug: "looot"
 name: "looot"
 description: "A hosted catalog of data endpoints behind one token and prepaid balance, exposed to agents over a remote MCP server, CLI and REST API"
+seoTitle: "looot: Data API Discovery and Fallback for AI Agents"
+seoDescription: "Explore looot's hosted data API catalog, where agents inspect prices, run jobs with provider fallback and read receipts through MCP, CLI or REST."
+reviewedBy: "foo-bender"
+reviewedAt: "2026-10-15"
 category: "api-access-orchestration-layers"
 tags:
   - "mcp"
