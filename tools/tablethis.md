@@ -48,6 +48,8 @@ evidenceSources:
     accessedAt: "2026-10-17"
     sourceType: "official-legal"
 verificationLevel: "documentation-reviewed"
+reviewedBy: "foo-bender"
+reviewedAt: "2026-10-17"
 classificationRationaleMd: "TableThis materially enables agents to work on shared records and documents across clients while enforcing workspace membership, OAuth scopes, conflict checks, and attributable changes. The qualifying value is its governed shared-data workflow, not merely the presence of an MCP endpoint."
 inclusionRationaleMd: "The product owns persistent shared tables and documents together with access control, audited mutations, and proposal/review/apply workflows. Storage & Media is the closest existing category because agents persist, retrieve, and update shared documents and records with material permission and provenance controls; this is not a claim of a dedicated agent-memory abstraction."
 bestForMd: "Teams building internal apps or shared knowledge workflows with AI assistants that need the same records and documents, scoped access, and reviewable changes."
