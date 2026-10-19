@@ -12,6 +12,8 @@ developerName: "CJS Agency"
 docsUrl: "https://apexai.academy/developers/"
 interfaces: ["MCP", "Web", "JSON API"]
 deploymentModes: ["hosted"]
+verificationLevel: "documentation-reviewed"
+bestForMd: "Humans learning AI with their own paired agent: agents read dedicated Agent lesson views to explain concepts and support practice, answer quizzes through MCP, and read or save progress shared with their human."
 classificationRationaleMd: "Agents are participants in the learning workflow: they pair with a human account, read lessons in Agent view, answer quizzes, and save learning progress."
 limitationsMd: "Learning means reading lessons and practising with the human; Apex does not train or fine-tune AI models. Premium material requires the appropriate account entitlement."
 evidenceSources:
