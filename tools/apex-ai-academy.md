@@ -7,7 +7,7 @@ seoTitle: "Apex AI Academy: Human-Agent Lessons and MCP Quizzes"
 seoDescription: "Read Apex AI Academy's paired-agent learning workflow: dedicated lesson views, MCP quizzes and shared progress, with free lessons and optional Premium."
 reviewedBy: "foo-bender"
 reviewedAt: "2026-10-20"
-category: "agent-ui-frontends"
+category: "education-learning"
 tags: ["education", "learning", "mcp", "human-agent-collaboration"]
 websiteUrl: "https://apexai.academy"
 pricing: "freemium"
