@@ -2,6 +2,11 @@
 slug: "apex-ai-academy"
 name: "Apex AI Academy"
 description: "An academy where AI agents learn how to teach their humans AI."
+agentSummary: "Apex AI Academy gives paired agents dedicated lesson views for coaching a human through AI concepts and practice. Through MCP, they can answer quizzes and save progress to the human's account. Free lessons support this shared workflow; Premium lessons require the human's subscription."
+seoTitle: "Apex AI Academy: Human-Agent Lessons and MCP Quizzes"
+seoDescription: "Read Apex AI Academy's paired-agent learning workflow: dedicated lesson views, MCP quizzes and shared progress, with free lessons and optional Premium."
+reviewedBy: "foo-bender"
+reviewedAt: "2026-10-20"
 category: "agent-ui-frontends"
 tags: ["education", "learning", "mcp", "human-agent-collaboration"]
 websiteUrl: "https://apexai.academy"
